@@ -23,3 +23,8 @@ curl -sS https://minecraft-linux.github.io/pkg/deb/pubkey.gpg | sudo tee /etc/ap
 echo "deb [arch=amd64,arm64] https://minecraft-linux.github.io/pkg/deb noble main" | sudo tee /etc/apt/sources.list.d/minecraft-linux-pkg.list
 sudo apt update
 sudo apt install mcpelauncher-manifest mcpelauncher-ui-manifest msa-manifest
+
+# Discord
+wget -O "/tmp/discord.deb" "https://discord.com/api/download/stable?platform=linux&format=deb"
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dpkg -i "/tmp/discord.deb"
+rm -f "/tmp/discord.deb"
