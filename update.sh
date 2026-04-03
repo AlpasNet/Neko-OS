@@ -5,7 +5,7 @@
 sudo apt update
 sudo apt upgrade
 
-sudo apt install v4l-utils vlc alsa-utils pulseaudio-utils python3-gi
+sudo apt install v4l-utils vlc alsa-utils pulseaudio-utils python3-gi openjdk
 
 # Capture Stream
 # A Better Way to get the stream from capture cards
