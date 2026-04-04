@@ -25,6 +25,12 @@ echo "deb [arch=amd64,arm64] https://minecraft-linux.github.io/pkg/deb noble-nig
 sudo apt update
 sudo apt install mcpelauncher-manifest mcpelauncher-ui-manifest msa-manifest
 
+# Spotify
+curl -sS https://download.spotify.com/debian/pubkey_5384CE82BA52C83A.asc | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update
+sudo apt install spotify-client
+
 # Discord
 wget -O "/tmp/discord.deb" "https://discord.com/api/download/stable?platform=linux&format=deb"
 pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dpkg -i "/tmp/discord.deb"
@@ -39,3 +45,4 @@ rm -f "/tmp/steam.deb"
 wget -O "/tmp/onlyoffice-desktopeditors_amd64.deb" "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb"
 pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dpkg -i "/tmp/onlyoffice-desktopeditors_amd64.deb"
 rm -f "/tmp/onlyoffice-desktopeditors_amd64.deb"
+
