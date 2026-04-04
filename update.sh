@@ -20,7 +20,8 @@ rm -dR capture-stream*
 # Minecraft Bedrock Linux Launcher
 # Note : You must buy the Android version on Google Play
 curl -sS https://minecraft-linux.github.io/pkg/deb/pubkey.gpg | sudo tee /etc/apt/trusted.gpg.d/minecraft-linux-pkg.asc
-echo "deb [arch=amd64,arm64] https://minecraft-linux.github.io/pkg/deb noble main" | sudo tee /etc/apt/sources.list.d/minecraft-linux-pkg.list
+# echo "deb [arch=amd64,arm64] https://minecraft-linux.github.io/pkg/deb noble main" | sudo tee /etc/apt/sources.list.d/minecraft-linux-pkg.list
+echo "deb [arch=amd64,arm64] https://minecraft-linux.github.io/pkg/deb noble-nightly main" | sudo tee /etc/apt/sources.list.d/minecraft-linux-pkg.list
 sudo apt update
 sudo apt install mcpelauncher-manifest mcpelauncher-ui-manifest msa-manifest
 
