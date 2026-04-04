@@ -29,3 +29,13 @@ sudo apt install mcpelauncher-manifest mcpelauncher-ui-manifest msa-manifest
 wget -O "/tmp/discord.deb" "https://discord.com/api/download/stable?platform=linux&format=deb"
 pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dpkg -i "/tmp/discord.deb"
 rm -f "/tmp/discord.deb"
+
+# Steam
+wget -O "/tmp/steam.deb" "https://cdn.fastly.steamstatic.com/client/installer/steam.deb"
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dpkg -i "/tmp/steam.deb"
+rm -f "/tmp/steam.deb"
+
+# Only Office
+wget -O "/tmp/onlyoffice-desktopeditors_amd64.deb" "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb"
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dpkg -i "/tmp/onlyoffice-desktopeditors_amd64.deb"
+rm -f "/tmp/onlyoffice-desktopeditors_amd64.deb"
