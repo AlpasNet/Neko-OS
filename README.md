@@ -3,6 +3,7 @@
 Creation of a Linux Environnement by using KUbuntu as a core
 
 ## Applications added :
-- Games : Minecraft Bedrock Linux Launcher
+- Office : Only Office
+- Games : Minecraft Bedrock Linux Launcher, Steam
 - Internet : Discord
 - Tools : Capture Stream
