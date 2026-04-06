@@ -46,3 +46,6 @@ wget -O "/tmp/onlyoffice-desktopeditors_amd64.deb" "https://github.com/ONLYOFFIC
 pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dpkg -i "/tmp/onlyoffice-desktopeditors_amd64.deb"
 rm -f "/tmp/onlyoffice-desktopeditors_amd64.deb"
 
+# GIMP
+wget -O "$HOME/Programs/GIMP.AppImage" "https://download.gimp.org/gimp/v3.2/linux/GIMP-3.2.2-x86_64.AppImage"
+
