@@ -1,6 +1,8 @@
 #!/bin/bash
 # Creation / Update of Neko-OS
 
+mkdir $HOME/Programs
+
 # Install all required dependencies
 sudo apt update
 sudo apt upgrade
