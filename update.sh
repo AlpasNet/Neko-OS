@@ -51,3 +51,6 @@ rm -f "/tmp/onlyoffice-desktopeditors_amd64.deb"
 # GIMP
 wget -O "$HOME/Programs/GIMP.AppImage" "https://download.gimp.org/gimp/v3.2/linux/GIMP-3.2.2-x86_64.AppImage"
 
+# OPERA GX
+wget -O "tmp/opera-gx.deb" "https://download3.operacdn.com/pub/opera_gx/129.0.5823.70/linux/opera-gx-stable_129.0.5823.70_amd64.deb"
+pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY dpkg -i "/tmp/opera-gx.deb"
