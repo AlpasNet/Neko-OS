@@ -6,6 +6,6 @@ Creation of a Linux Environnement by using KUbuntu as a core
 - Games : Minecraft Bedrock Linux Launcher, Steam
 - Graphics : GIMP
 - Internet : Discord, Opera GX
-- Multimedia : Spotify
+- Multimedia : Spotify, VLC
 - Office : Only Office
 - Tools : Capture Stream
